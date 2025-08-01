@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Julien Maalouf</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="accompagnement.html">Accompagnement</a></li>
-        <li><a href="hypnose-de-rue.html">Hypnose de rue</a></li>
-        <li><a href="formation.html">Formation</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+<nav class="navbar">
+  <div class="logo">Julien Maalouf</div>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Menu">&#9776;</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="accompagnement.html">Accompagnement</a></li>
+    <li><a href="hypnose-de-rue.html">Hypnose de rue</a></li>
+    <li><a href="formation.html">Formation</a></li>
+  </ul>
+</nav>
+</header>
 
   <main class="section">
     <h1>Hypnose de rue</h1>
@@ -25,15 +26,8 @@
 
     <p>En quelques minutes, les participants découvrent leur propre réceptivité à l’hypnose à travers des phénomènes comme l'amnésie, la catalepsie, ou encore les hallucinations positives.</p>
 
-    <div class="media">
-      <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/tr5pkSapNM8" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allowfullscreen>
-</iframe>
-
-
+    <div class="responsive-video">
+      <iframe src="https://www.youtube.com/embed/tr5pkSapNM8" allowfullscreen></iframe>
     </div>
 
     <p>Ces démonstrations ont aussi une visée pédagogique : montrer que l’hypnose est un phénomène naturel, accessible à tous, et non une forme de magie. C’est un outil puissant de transformation personnelle, même dans un cadre aussi libre que la rue.</p>
@@ -42,5 +36,8 @@
   <footer>
     <p>&copy; 2025 Julien Maalouf. Tous droits réservés.</p>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
