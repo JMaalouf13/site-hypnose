@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Julien Maalouf</title> <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Contactez Julien Maalouf pour prendre rendez-vous (hypnose), vous inscrire à une formation ou pour toute demande d'information.">
+    <link rel="canonical" href="https://julienmaalouf.fr/contact.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://julienmaalouf.fr/contact.html">
+    <meta property="og:title" content="Contactez Julien Maalouf - Hypnothérapeute">
+    <meta property="og:description"
+        content="Une question ? Un rendez-vous ? N'hésitez pas à me contacter via le formulaire ou par téléphone.">
+    <meta property="og:image" content="https://julienmaalouf.fr/images/contact-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://julienmaalouf.fr/contact.html">
+    <meta property="twitter:title" content="Contactez Julien Maalouf - Hypnothérapeute">
+    <meta property="twitter:description"
+        content="Une question ? Un rendez-vous ? N'hésitez pas à me contacter via le formulaire ou par téléphone.">
+    <meta property="twitter:image" content="https://julienmaalouf.fr/images/contact-og.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "description": "Page de contact de Julien Maalouf",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Julien Maalouf",
+        "telephone": "",
+        "email": "contact@julienmaalouf.fr",
+        "url": "https://julienmaalouf.fr",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Puteaux",
+            "postalCode": "92800",
+            "addressCountry": "FR"
+        }
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Local) -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body
+    class="bg-gradient-to-br from-secondary via-secondary-light to-white text-dark antialiased flex flex-col min-h-screen font-sans">
+
+    <!-- Navigation (Rebuilt from scratch) -->
+    <nav
+        class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html"
+                class="text-2xl md:text-3xl font-serif font-bold text-primary tracking-tight relative z-50">
+                Julien Maalouf
+            </a>
+
+            <!-- Background Decoration -->
+            <div
+                class="absolute top-0 right-0 w-2/3 md:w-1/2 h-full bg-gradient-to-l from-primary/10 via-secondary/20 to-transparent -z-10 blur-3xl">
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Accueil</a>
+                <a href="accompagnement.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Accompagnement</a>
+                <a href="hypnose-rue.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Hypnose de rue</a>
+                <a href="formation.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Formation</a>
+                <a href="contact.html"
+                    class="font-sans font-bold px-6 py-2 bg-white text-primary border-2 border-primary rounded-full hover:bg-gray-50 transition-all shadow-inner scale-95 duration-200">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn"
+                class="md:hidden z-50 text-2xl text-dark focus:outline-none w-10 h-10 flex items-center justify-center">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay (Clean & Reset) -->
+        <div id="mobile-menu-overlay"
+            class="fixed inset-0 z-40 bg-white hidden flex-col justify-center items-center space-y-8 h-screen w-screen">
+            <a href="index.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Accueil</a>
+            <a href="accompagnement.html"
+                class="text-3xl font-serif font-bold text-dark hover:text-primary">Accompagnement</a>
+            <a href="hypnose-rue.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Hypnose de
+                rue</a>
+            <a href="formation.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Formation</a>
+            <a href="contact.html" class="text-3xl font-serif font-bold text-primary">Contact</a>
+        </div>
+    </nav>
+
+
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-20 md:py-32 overflow-hidden">
+            <!-- Background Decoration -->
+            <div
+                class="absolute top-0 right-0 w-2/3 md:w-1/2 h-full bg-gradient-to-l from-primary/10 via-secondary/20 to-transparent -z-10 blur-3xl">
+            </div>
+
+            <div class="container mx-auto px-6 text-center">
+                <span class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-3 block opacity-0"
+                    data-animate="animate-fade-up">Me Contacter</span>
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold font-serif text-dark mb-6 opacity-0"
+                    data-delay="100" data-animate="animate-fade-up">
+                    Discutons de <span class="text-gradient-gold">Votre Projet</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto font-light leading-relaxed opacity-0"
+                    data-delay="200" data-animate="animate-fade-up">
+                    Une question ? Un rendez-vous ? Je suis à votre écoute pour vous accompagner vers votre changement.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 bg-white relative">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-16">
+                    <!-- Contact Info & Map Details -->
+                    <div class="lg:w-1/3 space-y-8">
+                        <!-- Info Card -->
+                        <div
+                            class="glass-premium p-8 rounded-3xl group hover:border-primary/30 transition-colors duration-300">
+                            <h2 class="text-2xl font-serif font-bold text-dark mb-6">Informations Pratiques</h2>
+
+                            <!-- Photo Placeholder (Restored) -->
+                            <div
+                                class="mb-6 w-32 h-32 rounded-full overflow-hidden shadow-gold mx-auto border-4 border-white/50">
+                                <img src="images/DSC03469.JPG" alt="Julien Maalouf - Contact" loading="lazy"
+                                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            </div>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                        <i class="fas fa-map-marker-alt text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark mb-1">Cabinet</h4>
+                                        <p class="text-gray-600 text-sm">8 rue marius Jacotot<br>92800 Puteaux</p>
+                                    </div>
+                                </div>
+                                <!-- Phone Removed as requested -->
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center flex-shrink-0 mr-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                        <i class="fas fa-video text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark mb-1">Visio-consultation</h4>
+                                        <p class="text-gray-600 text-sm">Disponible sur Zoom / WhatsApp / Google Meet
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opening Hours -->
+                        <div
+                            class="glass-premium p-8 rounded-3xl group hover:border-primary/30 transition-colors duration-300">
+                            <h2 class="text-2xl font-serif font-bold text-dark mb-6">Horaires d'ouverture</h2>
+                            <ul class="space-y-3 text-gray-600 text-sm">
+                                <li class="flex justify-between">
+                                    <span>Lundi - Vendredi</span>
+                                    <span class="font-bold text-dark">09:00 - 20:00</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Samedi</span>
+                                    <span class="font-bold text-dark">10:00 - 18:00</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Dimanche</span>
+                                    <span class="font-bold text-dark">10:00 - 18:00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:w-2/3">
+                        <div class="glass-premium p-8 md:p-12 rounded-[3rem] shadow-glass border border-white/40">
+                            <h2 class="text-3xl font-serif font-bold text-dark mb-8">Envoyez-moi un message</h2>
+                            <form id="contact-form" class="space-y-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="space-y-2">
+                                        <label for="name"
+                                            class="text-sm font-bold text-dark uppercase tracking-wide">Nom
+                                            complet</label>
+                                        <input type="text" id="name" name="name" required
+                                            class="w-full px-4 py-4 rounded-xl bg-white/50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all placeholder-gray-400"
+                                            placeholder="Votre nom">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label for="email"
+                                            class="text-sm font-bold text-dark uppercase tracking-wide">Email</label>
+                                        <input type="email" id="email" name="email" required
+                                            class="w-full px-4 py-4 rounded-xl bg-white/50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all placeholder-gray-400"
+                                            placeholder="votre@email.com">
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label for="subject"
+                                        class="text-sm font-bold text-dark uppercase tracking-wide">Sujet</label>
+                                    <select id="subject" name="subject"
+                                        class="w-full px-4 py-4 rounded-xl bg-white/50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all text-gray-600">
+                                        <option value="rdv">Prise de rendez-vous</option>
+                                        <option value="info">Demande d'informations</option>
+                                        <option value="formation">Formation</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label for="message"
+                                        class="text-sm font-bold text-dark uppercase tracking-wide">Message</label>
+                                    <textarea id="message" name="message" rows="5" required
+                                        class="w-full px-4 py-4 rounded-xl bg-white/50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all placeholder-gray-400"
+                                        placeholder="Comment puis-je vous aider ?"></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-gradient-to-r from-primary to-primary-light text-white font-bold py-4 rounded-xl shadow-gold hover:shadow-gold-lg hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide">
+                                    Envoyer le message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section (Full Width with Overlay) -->
+        <section class="h-96 relative w-full overflow-hidden">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.774578508123!2d2.235654976435848!3d48.88155209908696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66506dce4f043%3A0xc3b44b86892557a6!2s8%20Rue%20Marius%20Jacotot%2C%2092800%20Puteaux!5e0!3m2!1sfr!2sfr!4v1715421234567!5m2!1sfr!2sfr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+            <!-- Overlay Gradient -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent pointer-events-none">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white/80 py-12 border-t border-white/10 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <span class="text-2xl font-serif font-bold text-primary">Julien Maalouf</span>
+            </div>
+            <p class="text-sm font-light tracking-wide">&copy; 2025 Julien Maalouf. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Global Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

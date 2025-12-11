@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@source "index.html";
+@source "contact.html";
+@source "accompagnement.html";
+@source "hypnose-rue.html";
+@source "formation.html";
+@source "404.html";
+@source "js/scripts.js";
+
+@theme {
+    --color-primary: #C5A028;
+    --color-primary-light: #E5C558;
+    --color-primary-dark: #A08020;
+    --color-secondary: #FDF6E3;
+    --color-secondary-light: #FFFDF5;
+    --color-dark: #1c1c1c;
+
+    --font-sans: Lato, sans-serif;
+    --font-serif: "Playfair Display", serif;
+
+    --shadow-gold: 0 10px 30px -10px rgba(197, 160, 40, 0.4);
+    --shadow-gold-lg: 0 20px 40px -10px rgba(197, 160, 40, 0.5);
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+
+    --animate-fade-in: fadeIn 1s ease-out forwards;
+    --animate-fade-up: fadeUp 0.8s ease-out forwards;
+    --animate-zoom-in: zoomIn 0.6s ease-out forwards;
+    --animate-slide-in-right: slideInRight 0.8s ease-out forwards;
+    --animate-shimmer: shimmer 3s linear infinite;
+    --animate-float: float 6s ease-in-out infinite;
+}
+
+/* Premium Utilities */
+.text-gradient-gold {
+    background: linear-gradient(to right, #C5A028, #F3D87E, #C5A028);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shimmer 4s linear infinite;
+}
+
+.glass-premium {
+    @apply bg-white/80 backdrop-blur-xl border border-white/60 shadow-glass;
+}
+
+.card-hover {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-gold;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

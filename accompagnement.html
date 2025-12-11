@@ -1,61 +1,485 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accompagnement - Julien Maalouf</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accompagnement - Julien Maalouf</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDPQ52G8');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Séances d'hypnose personnalisées avec Julien Maalouf : arrêt du tabac, perte de poids, gestion du stress et des phobies. Une approche bienveillante et efficace.">
+    <link rel="canonical" href="https://julienmaalouf.fr/accompagnement.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://julienmaalouf.fr/accompagnement.html">
+    <meta property="og:title" content="Accompagnement Hypnose - Julien Maalouf">
+    <meta property="og:description"
+        content="Arrêt du tabac, perte de poids, phobies... Découvrez comment l'hypnose peut vous aider à atteindre vos objectifs.">
+    <meta property="og:image" content="https://julienmaalouf.fr/images/accompagnement-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://julienmaalouf.fr/accompagnement.html">
+    <meta property="twitter:title" content="Accompagnement Hypnose - Julien Maalouf">
+    <meta property="twitter:description"
+        content="Arrêt du tabac, perte de poids, phobies... Découvrez comment l'hypnose peut vous aider à atteindre vos objectifs.">
+    <meta property="twitter:image" content="https://julienmaalouf.fr/images/accompagnement-og.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Hypnotherapy",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Julien Maalouf",
+        "image": "https://julienmaalouf.fr/images/profile.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Puteaux",
+            "postalCode": "92800",
+            "addressCountry": "FR"
+        }
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Puteaux et Visio"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services d'Hypnose",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Arrêt du Tabac"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Perte de Poids"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gestion du Stress"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Local) -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-<nav class="navbar">
-  <div class="logo">Julien Maalouf</div>
-  <button class="menu-toggle" id="menu-toggle" aria-label="Menu">&#9776;</button>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="accompagnement.html">Accompagnement</a></li>
-    <li><a href="hypnose-de-rue.html">Hypnose de rue</a></li>
-    <li><a href="formation.html">Formation</a></li>
-  </ul>
-</nav>
-  </header>
 
-  <main class="section">
-    <h1>Accompagnement par l'hypnose</h1>
-    <p>Chaque personne est unique. Mon accompagnement s’adapte à vos besoins pour un mieux-être durable.</p>
+<body
+    class="bg-gradient-to-br from-secondary via-secondary-light to-white text-dark antialiased flex flex-col min-h-screen font-sans">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPQ52G8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <div class="cards">
-      <div class="card">
-        <h3>Arrêt du tabac</h3>
-        <p>Libérez-vous définitivement de la cigarette avec une méthode brève et efficace.</p>
-      </div>
-      <div class="card">
-        <h3>Gestion du stress & anxiété</h3>
-        <p>Reprenez le contrôle sur vos émotions et votre quotidien.</p>
-      </div>
-      <div class="card">
-        <h3>Confiance en soi</h3>
-        <p>Développez un état d'esprit solide pour affronter les défis de la vie.</p>
-      </div>
-      <div class="card">
-        <h3>Phobies</h3>
-        <p>Déconditionnez les peurs irrationnelles en quelques séances seulement.</p>
-      </div>
-      <div class="card">
-        <h3>Sommeil</h3>
-        <p>Améliorez la qualité de votre sommeil naturellement et durablement.</p>
-      </div>
-      <div class="card">
-        <h3>Objectifs personnels</h3>
-        <p>Utilisez l’hypnose pour stimuler votre motivation, créativité ou réussite.</p>
-      </div>
-    </div>
-  </main>
+    <!-- Navigation (Rebuilt from scratch) -->
+    <nav
+        class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html"
+                class="text-2xl md:text-3xl font-serif font-bold text-primary tracking-tight relative z-50">
+                Julien Maalouf
+            </a>
 
-  <footer>
-    <p>&copy; 2025 Julien Maalouf. Tous droits réservés.</p>
-  </footer>
-  <script src="script.js"></script>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Accueil</a>
+                <a href="accompagnement.html"
+                    class="font-sans font-bold text-primary border-b-2 border-primary">Accompagnement</a>
+                <a href="hypnose-rue.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Hypnose de rue</a>
+                <a href="formation.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Formation</a>
+                <a href="contact.html"
+                    class="font-sans font-medium px-6 py-2 bg-primary text-white rounded-full hover:bg-primary-light transition-all shadow-gold hover:shadow-lg active:scale-95 duration-200">Contact</a>
+            </div>
 
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn"
+                class="md:hidden z-50 text-2xl text-dark focus:outline-none w-10 h-10 flex items-center justify-center">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay (Clean & Reset) -->
+        <div id="mobile-menu-overlay"
+            class="fixed inset-0 z-40 bg-white hidden flex-col justify-center items-center space-y-8 h-screen w-screen">
+            <a href="index.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Accueil</a>
+            <a href="accompagnement.html" class="text-3xl font-serif font-bold text-primary">Accompagnement</a>
+            <a href="hypnose-rue.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Hypnose de
+                rue</a>
+            <a href="formation.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Formation</a>
+            <a href="contact.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-20 md:py-32 overflow-hidden">
+            <!-- Background Decoration -->
+            <div
+                class="absolute top-0 right-0 w-2/3 md:w-1/2 h-full bg-gradient-to-l from-primary/10 via-secondary/20 to-transparent -z-10 blur-3xl">
+            </div>
+            <div
+                class="absolute -top-20 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -z-10 animate-float">
+            </div>
+
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold font-serif text-dark mb-6 opacity-0"
+                    data-animate="animate-fade-up">
+                    Un Accompagnement <br>
+                    <span class="text-gradient-gold">Sur-Mesure</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto font-light leading-relaxed opacity-0"
+                    data-delay="200" data-animate="animate-fade-up">
+                    Chaque séance est unique, tout comme vous. Ensemble, nous construisons le chemin vers votre
+                    objectif.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-20 bg-white relative">
+            <div class="container mx-auto px-6">
+                <!-- SEO Heading for Structure -->
+                <h2 class="sr-only">Mes domaines d'intervention en hypnose</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1: Arrêt du tabac -->
+                    <div class="glass-premium rounded-3xl group card-hover overflow-hidden text-center">
+                        <div class="h-56 overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10">
+                            </div>
+                            <img src="images/Cigarette.png" alt="Arrêt du tabac" loading="lazy"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Arrêt du tabac</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Libérez-vous du tabac grâce à des techniques adaptées et un suivi personnalisé.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Gestion du stress & anxiété -->
+                    <div class="glass-premium rounded-3xl group card-hover overflow-hidden text-center">
+                        <div class="h-56 overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10">
+                            </div>
+                            <img src="images/Anxieté.jpg" alt="Gestion du Stress et Anxiété" loading="lazy"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Gestion du stress & anxiété</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Apprenez à gérer votre stress et vos angoisses pour retrouver sérénité et équilibre.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Confiance en soi -->
+                    <div class="glass-premium rounded-3xl group card-hover overflow-hidden text-center">
+                        <div class="h-56 overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10">
+                            </div>
+                            <img src="images/Confiance.jpg" alt="Confiance en soi" loading="lazy"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Confiance en soi</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Renforcez votre estime de vous et votre confiance grâce à des séances ciblées.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Phobies -->
+                    <div class="glass-premium rounded-3xl group card-hover overflow-hidden text-center">
+                        <div class="h-56 overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10">
+                            </div>
+                            <img src="images/Phobie.jpg" alt="Traitement des Phobies" loading="lazy"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Phobies</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Surmontez vos peurs grâce à des méthodes douces et efficaces.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Sommeil -->
+                    <div class="glass-premium rounded-3xl group card-hover overflow-hidden text-center">
+                        <div class="h-56 overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10">
+                            </div>
+                            <img src="images/Sommeil.jpg" alt="Amélioration du Sommeil" loading="lazy"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Sommeil</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Retrouvez un sommeil réparateur et naturel grâce à l'hypnose.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Objectifs personnels -->
+                    <div class="glass-premium rounded-3xl group card-hover overflow-hidden text-center">
+                        <div class="h-56 overflow-hidden relative">
+                            <div
+                                class="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10">
+                            </div>
+                            <img src="images/Objectif.jpg" alt="Atteinte d'Objectifs personnels" loading="lazy"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Objectifs personnels</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Atteignez vos objectifs avec confiance et motivation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section class="py-24 bg-secondary/30 relative overflow-hidden">
+            <div
+                class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent">
+            </div>
+
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20">
+                    <span class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-3 block">Processus</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-4">Comment se passe une
+                        séance ?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto font-light">Un accompagnement en toute
+                        transparence et bienveillance.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-12 relative">
+                    <!-- Connector Line (Desktop) -->
+                    <div
+                        class="hidden md:block absolute top-[3rem] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-primary/10 via-primary/40 to-primary/10 -z-10">
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="text-center relative group opacity-0" data-animate="animate-fade-up" data-delay="0">
+                        <div
+                            class="w-24 h-24 bg-white border-4 border-white shadow-gold rounded-full flex items-center justify-center mx-auto mb-8 text-3xl font-bold text-primary relative z-10 group-hover:scale-110 transition-transform duration-300">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-3 text-dark">L'Échange</h3>
+                        <p class="text-gray-600 px-4 leading-relaxed">Discussion approfondie pour définir votre
+                            objectif et comprendre vos mécanismes inconscients.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center relative group opacity-0" data-animate="animate-fade-up" data-delay="200">
+                        <div
+                            class="w-24 h-24 bg-primary text-white border-4 border-white shadow-gold rounded-full flex items-center justify-center mx-auto mb-8 text-3xl font-bold relative z-10 group-hover:scale-110 transition-transform duration-300">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-3 text-dark">Le Travail</h3>
+                        <p class="text-gray-600 px-4 leading-relaxed">Accompagnement hypnotique sur-mesure. Vous
+                            accédez à vos ressources pour activer le changement.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center relative group opacity-0" data-animate="animate-fade-up" data-delay="400">
+                        <div
+                            class="w-24 h-24 bg-white border-4 border-white shadow-gold rounded-full flex items-center justify-center mx-auto mb-8 text-3xl font-bold text-primary relative z-10 group-hover:scale-110 transition-transform duration-300">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold font-serif mb-3 text-dark">L'Intégration</h3>
+                        <p class="text-gray-600 px-4 leading-relaxed">Retour au calme et débriefing. Le travail
+                            continue de se faire naturellement dans les jours suivants.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Placeholder) -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-4">Vos témoignages</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Review 1 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="flex text-primary mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">"J'ai arrêté de fumer en une seule séance. C'est
+                            bluffant,
+                            je n'ai ressenti aucun manque. Merci Julien !"</p>
+                        <p class="font-bold text-sm text-dark">- Thomas L.</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="flex text-primary mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">"Une écoute exceptionnelle. Je me sens beaucoup
+                            plus légère
+                            et confiante depuis notre rdv."</p>
+                        <p class="font-bold text-sm text-dark">- Sarah B.</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                        <div class="flex text-primary mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">"Je recommande vivement pour la gestion du stress.
+                            Des
+                            outils concrets que j'utilise encore."</p>
+                        <p class="font-bold text-sm text-dark">- Marc D.</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <div
+                        class="p-4 bg-yellow-50 border border-yellow-200 rounded-lg inline-block text-yellow-800 text-sm">
+                        <i class="fas fa-info-circle mr-2"></i> Zone réservée pour afficher plus d'avis Google
+                        ou
+                        photos.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20 bg-dark text-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Questions Fréquentes
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Question 1 -->
+                    <div class="border border-white/20 rounded-lg overflow-hidden">
+                        <button
+                            class="w-full px-6 py-4 text-left flex justify-between items-center bg-white/5 hover:bg-white/10 transition-colors focus:outline-none"
+                            onclick="this.nextElementSibling.classList.toggle('hidden');">
+                            <span class="font-bold">Est-ce que tout le monde est hypnotisable ?</span>
+                            <i class="fas fa-chevron-down text-primary"></i>
+                        </button>
+                        <div class="hidden px-6 py-4 text-gray-300 bg-white/5 border-t border-white/10">
+                            <p>Oui, l'hypnose est un état naturel que nous expérimentons tous plusieurs fois par
+                                jour
+                                (comme quand on est "dans la lune"). Tout est une question de méthode et
+                                d'envie.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="border border-white/20 rounded-lg overflow-hidden">
+                        <button
+                            class="w-full px-6 py-4 text-left flex justify-between items-center bg-white/5 hover:bg-white/10 transition-colors focus:outline-none"
+                            onclick="this.nextElementSibling.classList.toggle('hidden');">
+                            <span class="font-bold">Combien de séances sont nécessaires ?</span>
+                            <i class="fas fa-chevron-down text-primary"></i>
+                        </button>
+                        <div class="hidden px-6 py-4 text-gray-300 bg-white/5 border-t border-white/10">
+                            <p>L'hypnose fait partie des thérapies brèves. Souvent, 1 à 3 séances suffisent pour
+                                débloquer une situation. Pour l'arrêt du tabac, une seule séance suffit
+                                généralement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="border border-white/20 rounded-lg overflow-hidden">
+                        <button
+                            class="w-full px-6 py-4 text-left flex justify-between items-center bg-white/5 hover:bg-white/10 transition-colors focus:outline-none"
+                            onclick="this.nextElementSibling.classList.toggle('hidden');">
+                            <span class="font-bold">Est-ce que je perds le contrôle ?</span>
+                            <i class="fas fa-chevron-down text-primary"></i>
+                        </button>
+                        <div class="hidden px-6 py-4 text-gray-300 bg-white/5 border-t border-white/10">
+                            <p>Absolument pas. Vous restez conscient tout le long et vous ne ferez jamais rien
+                                contre
+                                votre volonté. C'est vous qui avez les commandes, je ne suis que le guide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white/80 py-12 border-t border-white/10 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <span class="text-2xl font-serif font-bold text-primary">Julien Maalouf</span>
+            </div>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.tiktok.com/@julien.maalouf?_r=1&_t=ZN-927XJaJKIQo" target="_blank"
+                    class="text-white/60 hover:text-primary transition-colors"><i class="fab fa-tiktok text-xl"></i></a>
+                <a href="https://www.instagram.com/julien.maalouf.off?igsh=MTdlMnhvZms3aG45OA==" target="_blank"
+                    class="text-white/60 hover:text-primary transition-colors"><i
+                        class="fab fa-instagram text-xl"></i></a>
+                <a href="https://youtube.com/@julienmaaloufoff?si=AcTeeWy_AACj1oX5" target="_blank"
+                    class="text-white/60 hover:text-primary transition-colors"><i
+                        class="fab fa-youtube text-xl"></i></a>
+            </div>
+            <p class="text-sm font-light tracking-wide">&copy; 2025 Julien Maalouf. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Global Scripts -->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

@@ -1,42 +1,308 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formation - Julien Maalouf</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Hypnose - Julien Maalouf</title> <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Formez-vous à l'hypnose rapide et moderne avec Julien Maalouf. Apprenez les techniques d'induction, la suggestion et l'hypnose de rue.">
+    <link rel="canonical" href="https://julienmaalouf.fr/formation.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://julienmaalouf.fr/formation.html">
+    <meta property="og:title" content="Formation Hypnose Rapide - Julien Maalouf">
+    <meta property="og:description"
+        content="Devenez street hypnotiseur ou enrichissez votre pratique thérapeutique. Formations pratiques et intensives.">
+    <meta property="og:image" content="https://julienmaalouf.fr/images/formation-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://julienmaalouf.fr/formation.html">
+    <meta property="twitter:title" content="Formation Hypnose Rapide - Julien Maalouf">
+    <meta property="twitter:description"
+        content="Devenez street hypnotiseur ou enrichissez votre pratique thérapeutique. Formations pratiques et intensives.">
+    <meta property="twitter:image" content="https://julienmaalouf.fr/images/formation-og.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Formation Hypnose Rapide et Moderne",
+      "description": "Apprenez les bases de l'hypnose de rue et de l'hypnose rapide.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Julien Maalouf Formation",
+        "sameAs": "https://julienmaalouf.fr"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Local) -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-<nav class="navbar">
-  <div class="logo">Julien Maalouf</div>
-  <button class="menu-toggle" id="menu-toggle" aria-label="Menu">&#9776;</button>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="accompagnement.html">Accompagnement</a></li>
-    <li><a href="hypnose-de-rue.html">Hypnose de rue</a></li>
-    <li><a href="formation.html">Formation</a></li>
-  </ul>
-</nav>
-  </header>
 
-  <main class="section">
-    <h1>Formation avec H.Academy</h1>
-    <p>Je fais partie de l’équipe pédagogique de <strong>H.Academy</strong>, une référence francophone dans la formation à l’hypnose moderne.</p>
+<body
+    class="bg-gradient-to-br from-secondary via-secondary-light to-white text-dark antialiased flex flex-col min-h-screen font-sans">
 
-    <p>J'interviens en tant que <strong>formateur technicien</strong> sur les modules de base, où les stagiaires apprennent les fondamentaux de la communication hypnotique, des inductions rapides, et de la structure d’une séance efficace.</p>
+    <!-- Navigation (Rebuilt from scratch) -->
+    <nav
+        class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html"
+                class="text-2xl md:text-3xl font-serif font-bold text-primary tracking-tight relative z-50">
+                Julien Maalouf
+            </a>
 
-    <p>Que vous soyez débutant curieux ou professionnel en reconversion, la formation technicien vous permettra d'acquérir les compétences pratiques et les bons réflexes pour pratiquer en toute sécurité.</p>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Accueil</a>
+                <a href="accompagnement.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Accompagnement</a>
+                <a href="hypnose-rue.html"
+                    class="font-sans font-medium text-dark hover:text-primary transition-colors">Hypnose de rue</a>
+                <a href="formation.html"
+                    class="font-sans font-bold text-primary border-b-2 border-primary">Formation</a>
+                <a href="contact.html"
+                    class="font-sans font-medium px-6 py-2 bg-primary text-white rounded-full hover:bg-primary-light transition-all shadow-gold hover:shadow-lg active:scale-95 duration-200">Contact</a>
+            </div>
 
-    <p>Les formations sont proposées en présentiel dans différentes villes, ou à distance avec un accompagnement personnalisé.</p>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn"
+                class="md:hidden z-50 text-2xl text-dark focus:outline-none w-10 h-10 flex items-center justify-center">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
-    <p><a href="https://h.academy" target="_blank">Découvrir H.Academy</a></p>
-  </main>
+        <!-- Mobile Menu Overlay (Clean & Reset) -->
+        <div id="mobile-menu-overlay"
+            class="fixed inset-0 z-40 bg-white hidden flex-col justify-center items-center space-y-8 h-screen w-screen">
+            <a href="index.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Accueil</a>
+            <a href="accompagnement.html"
+                class="text-3xl font-serif font-bold text-dark hover:text-primary">Accompagnement</a>
+            <a href="hypnose-rue.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Hypnose de
+                rue</a>
+            <a href="formation.html" class="text-3xl font-serif font-bold text-primary">Formation</a>
+            <a href="contact.html" class="text-3xl font-serif font-bold text-dark hover:text-primary">Contact</a>
+        </div>
+    </nav>
 
-  <footer>
-    <p>&copy; 2025 Julien Maalouf. Tous droits réservés.</p>
-  </footer>
-  <script src="script.js"></script>
+    <main class="flex-grow py-12">
+        <div class="container mx-auto px-6 pt-20">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold font-serif text-dark mb-4">Formations avec la H.Academy</h1>
+            </div>
 
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary/20 transform -rotate-3 rounded-lg -z-10"></div>
+                        <img loading="lazy" src="images/DSC00321.JPG"
+                            alt="Formation Hypnose H.Academy avec Julien Maalouf"
+                            class="rounded-lg shadow-xl w-full h-auto object-cover transform rotate-0 hover:rotate-1 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-white/70 backdrop-blur-sm p-10 rounded-2xl shadow-glass border border-white/50">
+                        <p class="mb-4 text-lg">
+                            Je fais partie de l'équipe pédagogique de la <strong>H.Academy</strong>, une référence
+                            francophone dans la formation à l'hypnose moderne.
+                        </p>
+                        <p class="mb-4 text-lg">
+                            J'interviens en tant que <strong>formateur technicien</strong>. Les stagiaires y apprennent
+                            les fondamentaux : communication hypnotique, inductions rapides, et structure d'une séance
+                            efficace.
+                        </p>
+                        <p class="mb-6 text-lg">
+                            Cette formation est idéale pour les professionnels en reconversion comme pour les curieux.
+                        </p>
+
+                        <div class="pt-4">
+                            <a href="https://academy.haimlivai.com/" target="_blank"
+                                class="inline-block bg-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl hover:bg-primary-hover transform hover:-translate-y-1 transition-all duration-300">
+                                Découvrir la H.Academy <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <!-- Curriculum Section -->
+        <section class="py-20 bg-white relative">
+            <div class="absolute left-0 top-0 w-1/3 h-full bg-secondary/10 -z-10 clip-path-diagonal"></div>
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row gap-16">
+                    <!-- Left Column: Title & Intro -->
+                    <div class="md:w-1/3 sticky top-32 h-fit">
+                        <span
+                            class="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-3 block">Programme</span>
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-6">Au Programme de la
+                            Formation</h2>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Un cursus intensif alliant théorie fondamentale et pratique intensive. Vous ressortirez de
+                            cette formation avec tous les outils nécessaires pour accompagner vos futurs clients.
+                        </p>
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center bg-gradient-to-r from-primary to-primary-light text-white font-serif font-medium py-3 px-8 rounded-full shadow-gold hover:shadow-gold-lg hover:-translate-y-1 active:scale-95 transition-all duration-300">
+                            Demander le programme détaillé
+                        </a>
+                    </div>
+
+                    <!-- Right Column: Modules List -->
+                    <div class="md:w-2/3 space-y-8">
+                        <!-- Module 1 -->
+                        <div
+                            class="glass-premium p-8 rounded-3xl group hover:border-primary/30 transition-colors duration-300">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex-shrink-0 flex items-center justify-center text-xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                    01
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-xl font-bold font-serif text-dark mb-3 group-hover:text-primary transition-colors">
+                                        Les Fondamentaux de l'Hypnose</h3>
+                                    <p class="text-gray-600 leading-relaxed text-sm">Histoire, fonctionnement de
+                                        l'inconscient, pré-talk, tests de suggestibilité. Comprendre comment et pourquoi
+                                        ça marche.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 2 -->
+                        <div
+                            class="glass-premium p-8 rounded-3xl group hover:border-primary/30 transition-colors duration-300">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex-shrink-0 flex items-center justify-center text-xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                    02
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-xl font-bold font-serif text-dark mb-3 group-hover:text-primary transition-colors">
+                                        Les Inductions</h3>
+                                    <p class="text-gray-600 leading-relaxed text-sm">Apprentissage des inductions
+                                        rapides, instantanées et progressives. Savoir s'adapter à chaque sujet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 3 -->
+                        <div
+                            class="glass-premium p-8 rounded-3xl group hover:border-primary/30 transition-colors duration-300">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex-shrink-0 flex items-center justify-center text-xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                    03
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-xl font-bold font-serif text-dark mb-3 group-hover:text-primary transition-colors">
+                                        Les Protocoles de Changement</h3>
+                                    <p class="text-gray-600 leading-relaxed text-sm">Arrêt du tabac, gestion du poids,
+                                        stress, phobies. Les scripts et techniques clés pour des résultats durables.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module 4 -->
+                        <div
+                            class="glass-premium p-8 rounded-3xl group hover:border-primary/30 transition-colors duration-300">
+                            <div class="flex items-start gap-6">
+                                <div
+                                    class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex-shrink-0 flex items-center justify-center text-xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                    04
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-xl font-bold font-serif text-dark mb-3 group-hover:text-primary transition-colors">
+                                        Pratique & Supervision</h3>
+                                    <p class="text-gray-600 leading-relaxed text-sm">Mises en situation réelles,
+                                        débriefings et accompagnement pour développer votre propre style de thérapeute.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Practical Info -->
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div
+                        class="bg-dark text-white rounded-3xl p-8 md:p-12 shadow-2xl overflow-hidden relative max-w-4xl mx-auto">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-transparent">
+                        </div>
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-serif font-bold">Infos Pratiques</h2>
+                            <p class="text-white/60">Prochaines sessions à Paris</p>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-8 text-center">
+                            <div
+                                class="p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                                <i class="fas fa-calendar-alt text-3xl text-primary mb-4"></i>
+                                <h4 class="font-bold mb-2">Durée</h4>
+                                <p class="text-sm text-gray-300">2 à 4 Jours<br>selon le module</p>
+                            </div>
+                            <div
+                                class="p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                                <i class="fas fa-map-marker-alt text-3xl text-primary mb-4"></i>
+                                <h4 class="font-bold mb-2">Lieu</h4>
+                                <p class="text-sm text-gray-300">Paris / Puteaux<br>En présentiel</p>
+                            </div>
+                            <div
+                                class="p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                                <i class="fas fa-euro-sign text-3xl text-primary mb-4"></i>
+                                <h4 class="font-bold mb-2">Tarif</h4>
+                                <p class="text-sm text-gray-300">À partir de X€<br>(Voir H.Academy)</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-12">
+                            <div
+                                class="p-4 bg-yellow-500/20 border border-yellow-500/50 rounded-lg inline-block text-yellow-100 text-sm">
+                                <i class="fas fa-exclamation-triangle mr-2"></i> Zone réservée pour afficher les dates
+                                précises.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white/80 py-12 border-t border-white/10 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <span class="text-2xl font-serif font-bold text-primary">Julien Maalouf</span>
+            </div>
+            <p class="text-sm font-light tracking-wide">&copy; 2025 Julien Maalouf. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Global Scripts -->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
